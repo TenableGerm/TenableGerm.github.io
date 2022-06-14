@@ -1,0 +1,17 @@
+
+<!-- A grey horizontal navbar that becomes vertical on small screens -->
+<div class="bar bg-light rounded container row">
+    <!-- Links -->
+    <div class="col-sm-6 col-xs-12 item flex-fill">
+        <img class="img-fluid rounded-circle" src="../../../assets/Gavin-sm.jpg" alt="Gavin" style="max-height: 50px;">
+        <a href="" class="navbar-brand"><span class="navbar-brand"> Gavin's Portfolio</span></a>
+    </div>
+    <div ngbDropdown class="col-sm-4 col-xs-12 item">
+        <button class="btn btn-outline-primary btn-block" style="width:100%;" id="dropdownBasic1" ngbDropdownToggle>More About Me</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem onclick="window.location.href='/pastprojects'">My Past Projects</button>
+            <button ngbDropdownItem >Item 3</button>
+            <button ngbDropdownItem onclick="window.location.href='/exp'">My Experimentation Page</button>
+        </div>
+    </div>
+</div>
