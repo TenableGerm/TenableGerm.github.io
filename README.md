@@ -1,5 +1,7 @@
 # TenableGerm
 
+Make sure to 'cp docs/index.html docs/404.html' in order to allow git pages to handle the 404 errors caused by angular routing when built
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
 
 ## Development server
