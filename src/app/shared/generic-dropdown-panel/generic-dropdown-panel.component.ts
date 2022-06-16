@@ -29,4 +29,8 @@ export class GenericDropdownPanelComponent implements OnInit {
     this.display = !this.display;
   }
 
+  getImageDescription(i:number): String {
+    return this.project.imageDescriptions ? (this.project.imageDescriptions[i] ?  this.project.imageDescriptions[i] : "No Description")  : "No Description";
+  }
+
 }

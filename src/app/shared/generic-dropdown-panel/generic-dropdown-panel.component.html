@@ -23,6 +23,25 @@
             <span>{{project.projectDescription}}</span>
         </div>
 
+        <br>
+
+        <ng-container *ngIf="project.videoPath">
+            <div style="text-align:center">
+                <video width="400" controls="controls" controlsList="nodownload">
+                    <source [src]="project.videoPath" type="video/mp4">
+                    Your browser does not support the video tag using mp4.
+                </video>
+            </div>
+            <br>
+        </ng-container>
+       
+
+        <ng-container *ngFor="let img of project.imagePaths; index as i">
+            <img [src]="img" alt="Project Image" width="100%">
+            <span>{{getImageDescription(i)}}</span>
+            <br>
+        </ng-container>
+
     </div>
 </div>
 
