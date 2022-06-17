@@ -31,7 +31,9 @@ export class PastProjectsComponent implements OnInit {
     
       projectDescription: "Worked with a team of two other students to create a Rubik’s cube application that simulated a Rubik’s cube in a 3D space. Utilized Three.js for the Rubik’s cube and implemented the user interface that allowed manipulation of the cube.", 
     
-      videoPath: this.urlToAssets+"/Rubiks.mp4"
+      videoPath: this.urlToAssets+"/Rubiks.mp4",
+
+      Content: "cube"
     },
     {
       projectTitle: "Tune Maker Student Project",

@@ -11,5 +11,7 @@ export interface PastProject {
     imagePaths?:String[];
 
     imageDescriptions?: String[];
+    
+    Content?: String;
 
 }

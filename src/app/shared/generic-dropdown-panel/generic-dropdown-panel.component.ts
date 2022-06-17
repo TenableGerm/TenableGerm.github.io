@@ -33,4 +33,14 @@ export class GenericDropdownPanelComponent implements OnInit {
     return this.project.imageDescriptions ? (this.project.imageDescriptions[i] ?  this.project.imageDescriptions[i] : "No Description")  : "No Description";
   }
 
+  public loadScript(url: String, id: String) {
+    const body = document.getElementById(id as string);
+    const script = document.createElement('script');
+    script.innerHTML = '';
+    script.src = url as string;
+    script.async = false;
+    script.defer = true;
+    body ? body.appendChild(script): null;
+  }
+
 }

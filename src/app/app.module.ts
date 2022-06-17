@@ -12,6 +12,7 @@ import { ExperimentationComponent } from './experimentation/experimentation.comp
 import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 import { PastProjectsComponent } from './past-projects/past-projects.component';
 import { GenericDropdownPanelComponent } from './shared/generic-dropdown-panel/generic-dropdown-panel.component';
+import { RubiksCubeComponent } from './rubiks-cube/rubiks-cube.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { GenericDropdownPanelComponent } from './shared/generic-dropdown-panel/g
     PageNotFoundComponent,
     PastProjectsComponent,
     GenericDropdownPanelComponent,
+    RubiksCubeComponent,
   ],
   imports: [
     BrowserModule,
