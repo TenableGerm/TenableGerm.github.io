@@ -1,0 +1,18 @@
+<div class="bar bg-light rounded container row m-auto">
+    <div class="col-sm-12 col-xs-12 item text-center">
+        <h1>{{ gameStart ? gameWin ? "Planet Defended!" : "Go!" : "Get Ready..." }}</h1>
+        <br/>
+            <canvas #canvas id="canvas" width="300" height="300" class="m-auto" style="border:1px solid #000000; text-align: middle; touch-action: none;"></canvas>
+        <br/>
+    </div>
+    <br/>
+    <p> Controls: <br/>
+        Space - Shoot <br/>
+        W, A, S, D, Arrow Keys - Move <br/>
+        Mouse - Move <br/>
+        Touch - Move and Shoot <br/>
+        <br/>
+        Goal: <br/>
+        Defeat all enemies and defend the planet!
+    </p>
+</div>

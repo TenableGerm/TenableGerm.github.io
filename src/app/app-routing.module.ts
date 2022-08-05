@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ExperimentationComponent } from './experimentation/experimentation.component';
+import { GameOverComponent } from './game-over/game-over.component';
 import { HomeComponent } from "./home/home.component"
+import { LeaderBoardComponent } from './leader-board/leader-board.component';
 import { PastProjectsComponent } from './past-projects/past-projects.component';
 import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
+import { SideScrollerMainComponent } from './side-scroller-main/side-scroller-main.component';
 
 const routes: Routes = [
   {   
@@ -23,6 +26,18 @@ const routes: Routes = [
   {   
     path: 'pastprojects', 
     component: PastProjectsComponent,
+  },
+  {   
+    path: 'leaderboard', 
+    component: LeaderBoardComponent,
+  },
+  {   
+    path: 'playing', 
+    component: SideScrollerMainComponent,
+  },
+  {   
+    path: 'gameover', 
+    component: GameOverComponent,
   },
   //{ path: 'second-component', component:  },
   { path: '**', component: PageNotFoundComponent },  // Wildcard route for a 404 page
